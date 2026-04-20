@@ -1,0 +1,4 @@
+
+GPU Found: Tesla T4
+Output tensor shape: [16, 1]
+Output device: cuda:0
