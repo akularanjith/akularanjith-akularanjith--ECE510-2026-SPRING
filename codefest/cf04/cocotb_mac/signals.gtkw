@@ -1,0 +1,52 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Mon Apr 27 05:55:35 2026
+[*]
+[dumpfile] "/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf04/cocotb_mac/dump.vcd"
+[dumpfile_mtime] "Mon Apr 27 05:16:12 2026"
+[dumpfile_size] 991
+[savefile] "/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf04/cocotb_mac/signals.gtkw"
+[timestart] 0
+[size] 1280 633
+[pos] -27 -24
+*-14.972779 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 297
+[signals_width] 110
+[sst_expanded] 1
+[sst_vpaned_height] 168
+@22
+mac.a[7:0]
+@28
+mac.rst
+@22
+mac.a[7:0]
+mac.b[7:0]
+@28
+mac.clk
+@22
+mac.out[31:0]
+mac.prod[31:0]
+@28
+mac.rst
+@22
+mac.a[7:0]
+mac.b[7:0]
+@28
+mac.clk
+@22
+mac.out[31:0]
+mac.prod[31:0]
+@28
+mac.rst
+@22
+mac.a[7:0]
+mac.b[7:0]
+@28
+mac.clk
+@22
+mac.out[31:0]
+mac.prod[31:0]
+@28
+mac.rst
+[pattern_trace] 1
+[pattern_trace] 0

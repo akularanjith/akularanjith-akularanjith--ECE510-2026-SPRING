@@ -1,0 +1,41 @@
+rm -f results.xml
+"make" -f Makefile results.xml
+make[1]: Entering directory '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf04/cocotb_mac'
+/usr/bin/iverilog -o sim_build/sim.vvp -s mac -g2012 -f sim_build/cmds.f  /mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf04/cocotb_mac/mac_correct.v
+rm -f results.xml
+COCOTB_TEST_MODULES=test_mac COCOTB_TESTCASE= COCOTB_TEST_FILTER= COCOTB_TOPLEVEL=mac TOPLEVEL_LANG=verilog \
+         /usr/bin/vvp -M /home/default/.local/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus   sim_build/sim.vvp   
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.4 interpreter at /usr/bin/python3
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 12.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1777266972
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /home/default/.local/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.regression                  pytest not found, install it to enable better AssertionError messages
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_mac.test_mac_basic (1/2)
+                                                            Task 1: Basic functional test
+    11.00ns WARNING  py.warnings                        /mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf04/cocotb_mac/test_mac.py:16: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          assert dut.out.value.signed_integer == expected
+    31.00ns INFO     cocotb.regression                  test_mac.test_mac_basic passed
+    31.00ns INFO     cocotb.regression                  running test_mac.test_mac_overflow (2/2)
+                                                            Task 2: Overflow behavior check
+   141.00ns WARNING  py.warnings                        /mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf04/cocotb_mac/test_mac.py:28: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          cocotb.log.info(f"Final Value: {dut.out.value.signed_integer}")
+   141.00ns INFO     test                               Final Value: 145161
+   141.00ns INFO     cocotb.regression                  test_mac.test_mac_overflow passed
+   141.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_mac.test_mac_basic        PASS          31.00           0.01       5593.61  **
+                                                        ** test_mac.test_mac_overflow     PASS         110.00           0.00      52114.93  **
+                                                        **************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                141.00           0.01      12505.31  **
+                                                        **************************************************************************************
+VCD info: dumpfile dump.vcd opened for output.
+make[1]: Leaving directory '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf04/cocotb_mac'
+
+
+The Result: Your log showed Final Value: 145161.
+The Behavior: Since the mac module uses a 32-bit signed register, it can hold values up to $2,147,483,647$.
+The Observation: Because 145,161 is much smaller than the limit, the test passed without flipping to a negative number. If the simulation ran long enough 
+to pass 2.1 billion, it would "overflow" (wrap around) to $-2,147,483,648$.
