@@ -1,0 +1,108 @@
+$date
+	Sun May  3 16:02:47 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_compute_core $end
+$var wire 32 ! acc_out [31:0] $end
+$var reg 1 " clk $end
+$var reg 8 # feature_in [7:0] $end
+$var reg 1 $ rst $end
+$var reg 1 % valid_in $end
+$var reg 8 & weight [7:0] $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 8 ' feature_in [7:0] $end
+$var wire 1 $ rst $end
+$var wire 1 % valid_in $end
+$var wire 8 ( weight [7:0] $end
+$var parameter 32 ) ACC_WIDTH $end
+$var parameter 32 * DATA_WIDTH $end
+$var reg 32 + acc_out [31:0] $end
+$var reg 16 , product [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 *
+b100000 )
+$end
+#0
+$dumpvars
+bx ,
+bx +
+b0 (
+b0 '
+b0 &
+0%
+1$
+b0 #
+0"
+bx !
+$end
+#5000
+b0 !
+b0 +
+b0 ,
+1"
+#10000
+0"
+#15000
+1"
+#20000
+0"
+0$
+#25000
+1"
+#30000
+0"
+b11111011 #
+b11111011 '
+b1010 &
+b1010 (
+1%
+#35000
+b1111111111001110 ,
+1"
+#40000
+0"
+b11 #
+b11 '
+b10100 &
+b10100 (
+#45000
+b11111111111111111111111111001110 !
+b11111111111111111111111111001110 +
+b111100 ,
+1"
+#50000
+0"
+b0 #
+b0 '
+b0 &
+b0 (
+#55000
+b1010 !
+b1010 +
+b0 ,
+1"
+#60000
+0"
+0%
+#65000
+1"
+#70000
+0"
+#75000
+1"
+#80000
+0"
+#85000
+1"
+#90000
+0"

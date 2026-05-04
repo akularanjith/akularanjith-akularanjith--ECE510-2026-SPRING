@@ -1,0 +1,5 @@
+VCD info: dumpfile sim/dump.vcd opened for output.
+========================================
+PASS: Compute core matched expected output (10).
+========================================
+tb/tb_compute_core.sv:70: $finish called at 90000 (1ps)

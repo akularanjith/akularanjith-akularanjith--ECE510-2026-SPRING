@@ -1,0 +1,3 @@
+VCD info: dumpfile sim/dump_interface.vcd opened for output.
+PASS: Interface AXI-Stream simulation successful!
+tb/tb_interface.sv:37: $finish called at 70000 (1ps)
