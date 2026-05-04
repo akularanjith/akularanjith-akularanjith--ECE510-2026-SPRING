@@ -19,40 +19,79 @@ partial sums accumulate downward.
 ### 2) Trace Table
 **Fill in a cycle-by-cycle table. Trace at least 4 cycles.**
 
-| Cycle | Row 0 Input | Row 1 Input | PE[0][0] PS | PE[0][1] PS | PE[1][0] PS | PE[1][1] PS | Output C |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | A[0][0] = 1 | | 1 x 5 = 5 | 1 x 6 = 6 | | | |
-| 2 | A[1][0] = 3 | A[0][1] = 2 | 3 x 5 = 15 | 3 x 6 = 18 | 5 + (2 x 7) = 19 | 6 + (2 x 8) = 22 | [19, 22] |
-| 3 | | A[1][1] = 4 | | | 15 + (4 x 7) = 43 | 18 + (4 x 8) = 50 | [43, 50] |
-| 4 | | | | | | | |
+Cycle,Row 0 Input,Row 1 Input,PE[0][0] PS,PE[0][1] PS,PE[1][0] PS,PE[1][1] PS,Output C
+1,A[0][0] = 1,,1 x 5 = 5,1 x 6 = 6,,,
+2,A[1][0] = 3,A[0][1] = 2,3 x 5 = 15,3 x 6 = 18,5 + (2 x 7) = 19,6 + (2 x 8) = 22,"[19, 22]"
+3,,A[1][1] = 4,,,15 + (4 x 7) = 43,18 + (4 x 8) = 50,"[43, 50]"
+4,,,,,,,
 
-### 3) Count Metrics
-**(a) Total MAC operations; (b) Input value reuse; (c) Off-chip memory accesses.**
+Count: (a) total MAC operations performed; (b) number of times each input value is reused; (c) number of off-chip memory accesses for A, B (as inputs), and C (as output).
+(a) Total Number of MACs
 
-**Total Number of MACs**
+Let 
+C
+i
+ be the number of MACs for the 
+i
+ th cycle.
 
-$$
-\begin{aligned}
-\text{MACs} &= C_1 + C_2 + C_3 + C_4 \\
-&= 2 + 4 + 2 + 0 \\
-&= 8
-\end{aligned}
-$$
+MACs
+=
+C
+1
++
+C
+2
++
+C
+3
++
+C
+4
+=
+2
++
+4
++
+2
++
+0
+=
+8
 
-**Number of Times Each Input Value is Reused**
-[cite_start]Each input is reused twice. [cite: 31]
+The total number of MACs is 
+MACs
+=
+8
+.
 
-**Number of Off-chip Memory Accesses**
+(b) Number of Times Each input Value is Reused
 
-$$
-\begin{aligned}
-M &= A + B + C \\
-&= 4\text{ (reads)} + 4\text{ (reads)} + 4\text{ (writes)} \\
-&= 12\text{ (memory accesses)}
-\end{aligned}
-$$
+By looking at the table from Quesiton 2, we see each input is reaused twice.
 
-### 4) Output-Stationary Comparison
-**If this were output-stationary instead, which values would stay fixed in the PEs?**
+(c) Number of Off-chip Memory Accesses for A, B (as inputs), and C (as output),
 
-In an output-stationary dataflow, the partial sums (the values for Matrix C) would stay fixed in the PEs until the accumulation is complete. 
+Let M denote the off-chip memory accesses.
+
+M
+=
+A
++
+B
++
+C
+=
+4
+(reads)
++
+4
+(reads)
++
+4
+(writes)
+=
+12
+(memory accesses)
+
+if this were output-stationary instead, which values would stay fixed in the PEs? Give a one-sentence answer
+In this case, the PE holds onto its accumulating partial sum--the output values of C--instead of the weights staying fixed in the PEs, while the A inputs and the B weights stream through the PE.
