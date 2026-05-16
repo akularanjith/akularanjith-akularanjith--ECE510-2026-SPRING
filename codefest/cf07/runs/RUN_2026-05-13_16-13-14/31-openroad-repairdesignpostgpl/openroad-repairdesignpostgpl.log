@@ -1,0 +1,129 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/default/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/default/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/default/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf07/runs/RUN_2026-05-13_16-13-14/27-openroad-globalplacement/crossbar_mac.odb'…
+Reading design constraints file at '/nix/store/h0ldzjka94yryiq8yxbxmwargpnmwhx6-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 2.0
+[INFO] Setting input delay to: 2.0
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO RSZ-0027] Inserted 161 input buffers.
+[INFO RSZ-0028] Inserted 64 output buffers.
+[INFO RSZ-0058] Using max wire length 6335um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |      7128
+      100 |      97 |       0 |             0 |      7028
+      200 |     190 |       0 |             0 |      6928
+      300 |     287 |       0 |             0 |      6828
+      400 |     377 |       0 |             0 |      6728
+      500 |     460 |       0 |             0 |      6628
+      600 |     546 |       0 |             0 |      6528
+      700 |     634 |       0 |             0 |      6428
+      800 |     718 |       0 |             0 |      6328
+      900 |     807 |       0 |             0 |      6228
+     1000 |     892 |       2 |             2 |      6128
+     1100 |     982 |       3 |             3 |      6028
+     1200 |    1069 |       3 |             3 |      5928
+     1300 |    1160 |       3 |             3 |      5828
+     1400 |    1253 |       5 |             5 |      5728
+     1500 |    1345 |       7 |             7 |      5628
+     1600 |    1433 |       7 |             7 |      5528
+     1700 |    1527 |       7 |             7 |      5428
+     1800 |    1620 |       7 |             7 |      5328
+     1900 |    1714 |       8 |             8 |      5228
+     2000 |    1809 |      11 |            11 |      5128
+     2100 |    1903 |      16 |            15 |      5028
+     2200 |    1998 |      17 |            16 |      4928
+     2300 |    2092 |      18 |            17 |      4828
+     2400 |    2183 |      18 |            18 |      4728
+     2500 |    2271 |      18 |            18 |      4628
+     2600 |    2367 |      18 |            18 |      4528
+     2700 |    2460 |      18 |            18 |      4428
+     2800 |    2557 |      18 |            19 |      4328
+     2900 |    2652 |      18 |            20 |      4228
+     3000 |    2745 |      18 |            20 |      4128
+     3100 |    2838 |      18 |            21 |      4028
+     3200 |    2932 |      18 |            22 |      3928
+     3300 |    3031 |      18 |            23 |      3828
+     3400 |    3125 |      18 |            23 |      3728
+     3500 |    3216 |      18 |            24 |      3628
+     3600 |    3312 |      18 |            25 |      3528
+     3700 |    3410 |      18 |            26 |      3428
+     3800 |    3503 |      18 |            28 |      3328
+     3900 |    3595 |      18 |            29 |      3228
+     4000 |    3690 |      18 |            29 |      3128
+     4100 |    3781 |      18 |            34 |      3028
+     4200 |    3879 |      18 |            36 |      2928
+     4300 |    3977 |      18 |            37 |      2828
+     4400 |    4070 |      19 |            43 |      2728
+     4500 |    4168 |      20 |            46 |      2628
+     4600 |    4263 |      22 |            50 |      2528
+     4700 |    4356 |      22 |            54 |      2428
+     4800 |    4454 |      23 |            59 |      2328
+     4900 |    4552 |      24 |            61 |      2228
+     5000 |    4648 |      24 |            66 |      2128
+     5100 |    4746 |      24 |            71 |      2028
+     5200 |    4839 |      24 |            75 |      1928
+     5300 |    4936 |      24 |            81 |      1828
+     5400 |    5026 |      24 |            86 |      1728
+     5500 |    5119 |      24 |            91 |      1628
+     5600 |    5215 |      24 |            97 |      1528
+     5700 |    5310 |      24 |           100 |      1428
+     5800 |    5410 |      24 |           100 |      1328
+     5900 |    5444 |      24 |           170 |      1228
+     6000 |    5539 |      24 |           201 |      1128
+     6100 |    5633 |      24 |           246 |      1028
+     6200 |    5727 |      24 |           278 |       928
+     6300 |    5819 |      24 |           321 |       828
+     6400 |    5915 |      24 |           357 |       728
+     6500 |    6008 |      24 |           396 |       628
+     6600 |    6102 |      24 |           433 |       528
+     6700 |    6198 |      24 |           466 |       428
+     6800 |    6277 |      25 |           498 |       328
+     6900 |    6617 |     322 |           588 |       228
+     7000 |    6790 |     475 |           651 |       128
+     7100 |    6790 |     475 |           651 |        28
+    final |    6790 |     475 |           651 |         0
+---------------------------------------------------------
+[INFO RSZ-0034] Found 500 slew violations.
+[INFO RSZ-0035] Found 152 fanout violations.
+[INFO RSZ-0038] Inserted 475 buffers in 651 nets.
+[INFO RSZ-0039] Resized 6790 instances.
+Placement Analysis
+---------------------------------
+total displacement      16381.5 u
+average displacement        1.7 u
+max displacement           10.9 u
+original HPWL          148721.3 u
+legalized HPWL         164353.0 u
+delta HPWL                   11 %
+
+[INFO DPL-0020] Mirrored 2807 instances
+[INFO DPL-0021] HPWL before          164353.0 u
+[INFO DPL-0022] HPWL after           160330.8 u
+[INFO DPL-0023] HPWL delta               -2.4 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               274    1028.49
+  Tap cell                               1946    2434.84
+  Timing Repair Buffer                    700    3886.23
+  Inverter                                173     684.41
+  Sequential cell                          64    1601.54
+  Multi-Input combinational cell         6504   47584.39
+  Total                                  9661   57219.88
+Writing OpenROAD database to '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf07/runs/RUN_2026-05-13_16-13-14/31-openroad-repairdesignpostgpl/crossbar_mac.odb'…
+Writing netlist to '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf07/runs/RUN_2026-05-13_16-13-14/31-openroad-repairdesignpostgpl/crossbar_mac.nl.v'…
+Writing powered netlist to '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf07/runs/RUN_2026-05-13_16-13-14/31-openroad-repairdesignpostgpl/crossbar_mac.pnl.v'…
+Writing layout to '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf07/runs/RUN_2026-05-13_16-13-14/31-openroad-repairdesignpostgpl/crossbar_mac.def'…
+Writing timing constraints to '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/codefest/cf07/runs/RUN_2026-05-13_16-13-14/31-openroad-repairdesignpostgpl/crossbar_mac.sdc'…

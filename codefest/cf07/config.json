@@ -1,0 +1,6 @@
+{
+    "DESIGN_NAME": "crossbar_mac",
+    "VERILOG_FILES": ["dir::hdl/synth_top.sv"],
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10.0
+}

@@ -1,0 +1,38 @@
+94. Printing statistics.
+
+=== crossbar_mac ===
+
+   Number of wires:               7778
+   Number of wire bits:           8278
+   Number of public wires:          26
+   Number of public wire bits:     226
+   Number of ports:                 26
+   Number of port bits:            226
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               7860
+     $_ANDNOT_                    2424
+     $_AND_                        840
+     $_DFF_PP0_                     64
+     $_MUX_                          4
+     $_NAND_                       356
+     $_NOR_                        288
+     $_NOT_                        140
+     $_ORNOT_                      144
+     $_OR_                         864
+     $_XNOR_                       700
+     $_XOR_                       2036
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_DFF_PP0_ is unknown!
+
