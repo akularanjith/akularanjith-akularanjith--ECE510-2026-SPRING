@@ -1,7 +1,8 @@
-# Milestone 3 Synthesis Plan (Option B)
+# Milestone 3: Automation, Linting, and Synthesis Flow
+Target Core: INT8 Multiply-Accumulate (MAC) Compute Engine (`compute_core.sv`)
+Interface: AXI4-Stream Bus Wrapper (`interface.sv`)
 
-Because my actual project compute core was not fully ready for physical synthesis, I utilized the Codefest 06 crossbar design (Option B) to validate my OpenLane 2 toolchain. I plan to successfully run synthesis on my actual project core by Wednesday, May 20th, ahead of the M3 deadline.
-
-I expect my actual compute core synthesis to look significantly different. The overall cell count and silicon area will be larger due to the control state machines and tracking registers. Furthermore, the critical path will shift from parallel combinational multipliers into the iterative sequential loops used for localization calculation.
-
-This fallback exercise was highly valuable. The severe setup and slew violations (-3.84ns WNS) demonstrated exactly how unpipelined arithmetic operations cause timing failures. I will use this knowledge to ensure my M3 core is properly pipelined.
+## Automation Strategy
+1. **Linting & Elaborating**: Verify the data paths for the `Conv2D._im2col` parallel array using strict Verilator compliance checks.
+2. **Logic Synthesis**: Utilize the OpenLane2/Yosys automation flow to target the 80 GFLOP/s hardware threshold.
+3. **Timing Optimization**: Map standard cells to ensure minimal negative slack under high clock frequencies to meet physical design guidelines.
