@@ -1,3 +1,0 @@
-
-### May 2026 Scope Assessment Update
-Based on the fallback crossbar synthesis results, deep combinational arithmetic trees demand a massive silicon layout (7,924 cells for a basic 4x4 matrix multiplier) and experience heavy setup violations (-3.84 ns WNS) at 100MHz under slow corners. This confirms our prior design pivot: restricting our localization project exclusively to RSSI-based algorithms is entirely mandatory, as adding the timing infrastructure required for RTT processing would overwhelm our constraints on the Sky130 node. We are maintaining our current architectural scope but will implement mandatory register pipelining across the core's interior execution stages to guarantee timing signoff for Milestone 3.
