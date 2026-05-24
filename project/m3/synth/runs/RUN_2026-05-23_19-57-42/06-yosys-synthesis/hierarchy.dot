@@ -1,0 +1,26 @@
+digraph "top" {
+label="top";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="m_axis_tlast", color="black", fontcolor="black"];
+n2 [ shape=octagon, label="m_axis_tready", color="black", fontcolor="black"];
+n3 [ shape=octagon, label="m_axis_tvalid", color="black", fontcolor="black"];
+n4 [ shape=octagon, label="m_axis_tdata", color="black", fontcolor="black"];
+n5 [ shape=octagon, label="s_axis_tlast", color="black", fontcolor="black"];
+n6 [ shape=octagon, label="s_axis_tready", color="black", fontcolor="black"];
+n7 [ shape=octagon, label="s_axis_tvalid", color="black", fontcolor="black"];
+n8 [ shape=octagon, label="s_axis_tdata", color="black", fontcolor="black"];
+n9 [ shape=octagon, label="aresetn", color="black", fontcolor="black"];
+n10 [ shape=octagon, label="aclk", color="black", fontcolor="black"];
+c11 [ shape=record, label="{{<p10> aclk|<p9> aresetn|<p2> m_axis_tready|<p8> s_axis_tdata|<p5> s_axis_tlast|<p7> s_axis_tvalid}|cnn_mac_wrapper\naxis_interface|{<p4> m_axis_tdata|<p1> m_axis_tlast|<p3> m_axis_tvalid|<p6> s_axis_tready}}",  ];
+c11:p1:e -> n1:w [color="black", fontcolor="black", label=""];
+n10:e -> c11:p10:w [color="black", fontcolor="black", label=""];
+n2:e -> c11:p2:w [color="black", fontcolor="black", label=""];
+c11:p3:e -> n3:w [color="black", fontcolor="black", label=""];
+c11:p4:e -> n4:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> c11:p5:w [color="black", fontcolor="black", label=""];
+c11:p6:e -> n6:w [color="black", fontcolor="black", label=""];
+n7:e -> c11:p7:w [color="black", fontcolor="black", label=""];
+n8:e -> c11:p8:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n9:e -> c11:p9:w [color="black", fontcolor="black", label=""];
+}

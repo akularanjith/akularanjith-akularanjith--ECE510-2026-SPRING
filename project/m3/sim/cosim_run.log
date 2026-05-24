@@ -1,0 +1,5 @@
+VCD info: dumpfile m3/sim/cosim.vcd opened for output.
+========================================
+PASS
+========================================
+m3/tb/tb_top.sv:108: $finish called at 145000 (1ps)
