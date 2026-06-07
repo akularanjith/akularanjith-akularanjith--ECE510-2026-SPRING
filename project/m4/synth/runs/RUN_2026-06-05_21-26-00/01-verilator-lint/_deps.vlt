@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/project/m4/synth/runs/RUN_2026-06-05_21-26-00/tmp/da051690eb204454b754f6167f574b60.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/project/m4/synth/runs/RUN_2026-06-05_21-26-00/tmp/da051690eb204454b754f6167f574b60.bb.v"

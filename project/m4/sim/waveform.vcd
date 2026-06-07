@@ -1,0 +1,197 @@
+$date
+	Thu Jun  4 14:19:24 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_top $end
+$var wire 1 ! s_axis_tready $end
+$var wire 1 " m_axis_tvalid $end
+$var wire 32 # m_axis_tdata [31:0] $end
+$var reg 1 $ aclk $end
+$var reg 1 % aresetn $end
+$var reg 1 & m_axis_tready $end
+$var reg 16 ' s_axis_tdata [15:0] $end
+$var reg 1 ( s_axis_tvalid $end
+$scope module dut $end
+$var wire 1 $ aclk $end
+$var wire 1 % aresetn $end
+$var wire 1 & m_axis_tready $end
+$var wire 16 ) s_axis_tdata [15:0] $end
+$var wire 1 ( s_axis_tvalid $end
+$var wire 1 ! s_axis_tready $end
+$var wire 1 " m_axis_tvalid $end
+$var wire 32 * m_axis_tdata [31:0] $end
+$var wire 8 + internal_weight [7:0] $end
+$var wire 1 , internal_valid $end
+$var wire 8 - internal_rssi [7:0] $end
+$var wire 1 . internal_ready $end
+$scope module u_compute $end
+$var wire 1 $ aclk $end
+$var wire 1 % aresetn $end
+$var wire 1 . core_ready $end
+$var wire 1 & m_axis_tready $end
+$var wire 32 / psum_out [31:0] $end
+$var wire 8 0 weight_in [7:0] $end
+$var wire 1 , valid_in $end
+$var wire 8 1 rssi_in [7:0] $end
+$var wire 16 2 mult_result [15:0] $end
+$var reg 32 3 accumulator [31:0] $end
+$var reg 1 " psum_valid $end
+$upscope $end
+$scope module u_interface $end
+$var wire 1 $ aclk $end
+$var wire 1 % aresetn $end
+$var wire 1 . core_ready $end
+$var wire 16 4 s_axis_tdata [15:0] $end
+$var wire 1 ! s_axis_tready $end
+$var wire 1 ( s_axis_tvalid $end
+$var wire 1 , valid_out $end
+$var wire 8 5 weight_out [7:0] $end
+$var wire 8 6 rssi_out [7:0] $end
+$var reg 16 7 tdata_reg [15:0] $end
+$var reg 1 8 tvalid_reg $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x8
+bx 7
+bx 6
+bx 5
+b0 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+1.
+bx -
+x,
+bx +
+bx *
+b0 )
+0(
+b0 '
+1&
+0%
+0$
+bx #
+x"
+1!
+$end
+#6000
+b0 2
+b0 -
+b0 1
+b0 6
+b0 +
+b0 0
+b0 5
+0,
+08
+b0 7
+0"
+b0 #
+b0 *
+b0 /
+b0 3
+1$
+#12000
+0$
+#18000
+1$
+#24000
+1%
+0$
+#30000
+1$
+#36000
+1(
+b111111101111111 '
+b111111101111111 )
+b111111101111111 4
+0$
+#42000
+b11111100000001 2
+b1111111 -
+b1111111 1
+b1111111 6
+b1111111 +
+b1111111 0
+b1111111 5
+1,
+18
+b111111101111111 7
+1$
+#48000
+b1000000011 '
+b1000000011 )
+b1000000011 4
+0$
+#54000
+b10 -
+b10 1
+b10 6
+b110 2
+b11 +
+b11 0
+b11 5
+b1000000011 7
+1"
+b11111100000001 #
+b11111100000001 *
+b11111100000001 /
+b11111100000001 3
+1$
+#60000
+0(
+0$
+#66000
+b11111100000111 #
+b11111100000111 *
+b11111100000111 /
+b11111100000111 3
+0,
+08
+1$
+#72000
+0$
+#78000
+0"
+1$
+#84000
+0$
+#90000
+1$
+#96000
+0$
+#102000
+1$
+#108000
+0$
+#114000
+1$
+#120000
+0$
+#126000
+1$
+#132000
+0$
+#138000
+1$
+#144000
+0$
+#150000
+1$
+#156000
+0$
+#160000

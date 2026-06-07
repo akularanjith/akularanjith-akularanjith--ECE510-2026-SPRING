@@ -1,0 +1,133 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= min_tt_025C_1v80 Corner ===================================
+
+Startpoint: m_axis_tready (input port clocked by aclk)
+Endpoint: s_axis_tready (output port clocked by aclk)
+Path Group: aclk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock aclk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  4.000000    4.000000 ^ input external delay
+     2    0.004775    0.028303    0.017094    4.017094 ^ m_axis_tready (in)
+                                                         m_axis_tready (net)
+                      0.028303    0.000000    4.017094 ^ input2/A (sky130_fd_sc_hd__clkbuf_2)
+     7    0.026190    0.146683    0.171701    4.188795 ^ input2/X (sky130_fd_sc_hd__clkbuf_2)
+                                                         net2 (net)
+                      0.146683    0.000373    4.189168 ^ _2122_/A (sky130_fd_sc_hd__clkbuf_1)
+     1    0.001947    0.037516    0.097946    4.287114 ^ _2122_/X (sky130_fd_sc_hd__clkbuf_1)
+                                                         net53 (net)
+                      0.037516    0.000008    4.287122 ^ output53/A (sky130_fd_sc_hd__buf_2)
+     1    0.034202    0.169812    0.195162    4.482284 ^ output53/X (sky130_fd_sc_hd__buf_2)
+                                                         s_axis_tready (net)
+                      0.169812    0.000261    4.482544 ^ s_axis_tready (out)
+                                              4.482544   data arrival time
+
+                                 20.000000   20.000000   clock aclk (rise edge)
+                                  0.000000   20.000000   clock network delay (propagated)
+                                 -0.250000   19.750002   clock uncertainty
+                                  0.000000   19.750002   clock reconvergence pessimism
+                                 -4.000000   15.750001   output external delay
+                                             15.750001   data required time
+---------------------------------------------------------------------------------------------
+                                             15.750001   data required time
+                                             -4.482544   data arrival time
+---------------------------------------------------------------------------------------------
+                                             11.267457   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= min_tt_025C_1v80 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= min_tt_025C_1v80 Corner ===================================
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+clkbuf_2_0__f_aclk/X                     10     37    -27 (VIOLATED)
+clkbuf_2_1__f_aclk/X                     10     27    -17 (VIOLATED)
+clkbuf_2_3__f_aclk/X                     10     27    -17 (VIOLATED)
+fanout111/X                              10     21    -11 (VIOLATED)
+fanout113/X                              10     21    -11 (VIOLATED)
+fanout122/X                              10     21    -11 (VIOLATED)
+fanout124/X                              10     21    -11 (VIOLATED)
+fanout125/X                              10     21    -11 (VIOLATED)
+fanout127/X                              10     21    -11 (VIOLATED)
+fanout129/X                              10     21    -11 (VIOLATED)
+fanout133/X                              10     21    -11 (VIOLATED)
+fanout135/X                              10     21    -11 (VIOLATED)
+fanout136/X                              10     21    -11 (VIOLATED)
+fanout57/X                               10     21    -11 (VIOLATED)
+fanout61/X                               10     21    -11 (VIOLATED)
+fanout62/X                               10     21    -11 (VIOLATED)
+fanout63/X                               10     21    -11 (VIOLATED)
+fanout67/X                               10     21    -11 (VIOLATED)
+fanout72/X                               10     21    -11 (VIOLATED)
+fanout76/X                               10     21    -11 (VIOLATED)
+fanout78/X                               10     21    -11 (VIOLATED)
+fanout79/X                               10     21    -11 (VIOLATED)
+fanout80/X                               10     21    -11 (VIOLATED)
+fanout81/X                               10     21    -11 (VIOLATED)
+fanout83/X                               10     21    -11 (VIOLATED)
+fanout85/X                               10     21    -11 (VIOLATED)
+fanout86/X                               10     21    -11 (VIOLATED)
+fanout88/X                               10     21    -11 (VIOLATED)
+fanout90/X                               10     21    -11 (VIOLATED)
+fanout96/X                               10     21    -11 (VIOLATED)
+_1558_/Y                                 10     19     -9 (VIOLATED)
+clkbuf_2_2__f_aclk/X                     10     19     -9 (VIOLATED)
+fanout121/X                              10     19     -9 (VIOLATED)
+fanout134/X                              10     19     -9 (VIOLATED)
+fanout58/X                               10     19     -9 (VIOLATED)
+fanout84/X                               10     19     -9 (VIOLATED)
+fanout118/X                              10     17     -7 (VIOLATED)
+fanout68/X                               10     17     -7 (VIOLATED)
+_1225_/X                                 10     15     -5 (VIOLATED)
+fanout105/X                              10     15     -5 (VIOLATED)
+fanout87/X                               10     15     -5 (VIOLATED)
+_1523_/Y                                 10     13     -3 (VIOLATED)
+fanout64/X                               10     13     -3 (VIOLATED)
+_1074_/Y                                 10     11        (VIOLATED)
+fanout123/X                              10     11        (VIOLATED)
+fanout126/X                              10     11        (VIOLATED)
+fanout73/X                               10     11        (VIOLATED)
+fanout77/X                               10     11        (VIOLATED)
+fanout82/X                               10     11        (VIOLATED)
+fanout91/X                               10     11        (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 3 unannotated drivers.
+ clkload0/Y
+ clkload1/Y
+ clkload2/Y
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 50
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

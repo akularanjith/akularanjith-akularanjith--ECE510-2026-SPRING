@@ -1,0 +1,89 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+Startpoint: m_axis_tready (input port clocked by aclk)
+Endpoint: s_axis_tready (output port clocked by aclk)
+Path Group: aclk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock aclk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  4.000000    4.000000 ^ input external delay
+     1    0.002875    0.020053    0.010553    4.010553 ^ m_axis_tready (in)
+                                                         m_axis_tready (net)
+                      0.020053    0.000000    4.010553 ^ input2/A (sky130_fd_sc_hd__clkbuf_2)
+     7    0.023300    0.131645    0.158480    4.169033 ^ input2/X (sky130_fd_sc_hd__clkbuf_2)
+                                                         net2 (net)
+                      0.131645    0.000155    4.169188 ^ _2122_/A (sky130_fd_sc_hd__clkbuf_1)
+     1    0.001851    0.036259    0.094994    4.264182 ^ _2122_/X (sky130_fd_sc_hd__clkbuf_1)
+                                                         net53 (net)
+                      0.036259    0.000000    4.264183 ^ output53/A (sky130_fd_sc_hd__buf_2)
+     1    0.034146    0.169535    0.194592    4.458775 ^ output53/X (sky130_fd_sc_hd__buf_2)
+                                                         s_axis_tready (net)
+                      0.169535    0.000119    4.458894 ^ s_axis_tready (out)
+                                              4.458894   data arrival time
+
+                                 20.000000   20.000000   clock aclk (rise edge)
+                                  0.000000   20.000000   clock network delay (propagated)
+                                 -0.250000   19.750002   clock uncertainty
+                                  0.000000   19.750002   clock reconvergence pessimism
+                                 -4.000000   15.750001   output external delay
+                                             15.750001   data required time
+---------------------------------------------------------------------------------------------
+                                             15.750001   data required time
+                                             -4.458894   data arrival time
+---------------------------------------------------------------------------------------------
+                                             11.291107   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+clkbuf_2_0__f_aclk/X                     10     18     -8 (VIOLATED)
+clkbuf_2_1__f_aclk/X                     10     13     -3 (VIOLATED)
+clkbuf_2_3__f_aclk/X                     10     13     -3 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 3 unannotated drivers.
+ clkload0/Y
+ clkload1/Y
+ clkload2/Y
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+Writing metric design__max_slew_violation__count__corner:nom_tt_025C_1v80: 0
+max fanout violation count 3
+Writing metric design__max_fanout_violation__count__corner:nom_tt_025C_1v80: 3
+max cap violation count 0
+Writing metric design__max_cap_violation__count__corner:nom_tt_025C_1v80: 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

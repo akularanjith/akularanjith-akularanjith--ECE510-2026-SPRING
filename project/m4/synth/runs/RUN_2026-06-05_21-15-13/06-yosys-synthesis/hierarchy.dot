@@ -1,0 +1,37 @@
+digraph "top" {
+label="top";
+rankdir="LR";
+remincross=true;
+n1 [ shape=diamond, label="internal_ready", color="black", fontcolor="black"];
+n2 [ shape=diamond, label="internal_valid", color="black", fontcolor="black"];
+n3 [ shape=diamond, label="internal_weight", color="black", fontcolor="black"];
+n4 [ shape=diamond, label="internal_rssi", color="black", fontcolor="black"];
+n5 [ shape=octagon, label="m_axis_tready", color="black", fontcolor="black"];
+n6 [ shape=octagon, label="m_axis_tvalid", color="black", fontcolor="black"];
+n7 [ shape=octagon, label="m_axis_tdata", color="black", fontcolor="black"];
+n8 [ shape=octagon, label="s_axis_tready", color="black", fontcolor="black"];
+n9 [ shape=octagon, label="s_axis_tvalid", color="black", fontcolor="black"];
+n10 [ shape=octagon, label="s_axis_tdata", color="black", fontcolor="black"];
+n11 [ shape=octagon, label="aresetn", color="black", fontcolor="black"];
+n12 [ shape=octagon, label="aclk", color="black", fontcolor="black"];
+c19 [ shape=record, label="{{<p12> aclk|<p11> aresetn|<p5> m_axis_tready|<p13> rssi_in|<p14> valid_in|<p15> weight_in}|u_compute\ncompute_core|{<p16> core_ready|<p17> psum_out|<p18> psum_valid}}",  ];
+c23 [ shape=record, label="{{<p12> aclk|<p11> aresetn|<p16> core_ready|<p10> s_axis_tdata|<p9> s_axis_tvalid}|u_interface\ninterface_unit|{<p20> rssi_out|<p8> s_axis_tready|<p21> valid_out|<p22> weight_out}}",  ];
+c19:p16:e -> n1:w [color="black", fontcolor="black", label=""];
+n1:e -> c23:p16:w [color="black", fontcolor="black", label=""];
+n10:e -> c23:p10:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n11:e -> c19:p11:w [color="black", fontcolor="black", label=""];
+n11:e -> c23:p11:w [color="black", fontcolor="black", label=""];
+n12:e -> c19:p12:w [color="black", fontcolor="black", label=""];
+n12:e -> c23:p12:w [color="black", fontcolor="black", label=""];
+c23:p21:e -> n2:w [color="black", fontcolor="black", label=""];
+n2:e -> c19:p14:w [color="black", fontcolor="black", label=""];
+c23:p22:e -> n3:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n3:e -> c19:p15:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+c23:p20:e -> n4:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n4:e -> c19:p13:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> c19:p5:w [color="black", fontcolor="black", label=""];
+c19:p18:e -> n6:w [color="black", fontcolor="black", label=""];
+c19:p17:e -> n7:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+c23:p8:e -> n8:w [color="black", fontcolor="black", label=""];
+n9:e -> c23:p9:w [color="black", fontcolor="black", label=""];
+}

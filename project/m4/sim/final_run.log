@@ -1,0 +1,7 @@
+VCD info: dumpfile project/m4/sim/waveform.vcd opened for output.
+========================================
+SIMULATION RESULT: PASS
+Expected 32-bit Accumulator Output: 16135
+Actual 32-bit Accumulator Output:   16135
+========================================
+project/m4/tb/tb_top.sv:85: $finish called at 160000 (1ps)

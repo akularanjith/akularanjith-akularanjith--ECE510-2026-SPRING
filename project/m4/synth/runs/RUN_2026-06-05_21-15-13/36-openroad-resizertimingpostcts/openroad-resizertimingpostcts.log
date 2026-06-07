@@ -1,0 +1,98 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/default/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/default/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/default/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/project/m4/synth/runs/RUN_2026-06-05_21-15-13/34-openroad-cts/top.odb'…
+Reading design constraints file at '/nix/store/h0ldzjka94yryiq8yxbxmwargpnmwhx6-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[INFO] Using clock aclk…
+[INFO] Setting output delay to: 2.4
+[INFO] Setting input delay to: 2.4
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO RSZ-0094] Found 14 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 14 out of 14 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |            | Endpts | Endpt
+---------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |   -1.959 |       -9.1 |     14 | _2120_/D
+       10 |       0 |       7 |        0 |      0 |     2 |   -1.604 |       -5.5 |     14 | _2120_/D
+       20 |       0 |      14 |        2 |      0 |     4 |   -1.223 |       -3.4 |     14 | _2120_/D
+       30 |       0 |      23 |        2 |      0 |     5 |   -0.806 |       -1.5 |     14 | _2120_/D
+       40 |       0 |      30 |        4 |      0 |     7 |   -0.688 |       -1.1 |     14 | _2120_/D
+       50 |       0 |      40 |        4 |      0 |     7 |   -0.529 |       -0.8 |     14 | _2120_/D
+       60 |       0 |      47 |        6 |      1 |     8 |   -0.468 |       -0.7 |     14 | _2120_/D
+       70 |       0 |      54 |       13 |      1 |     9 |   -0.319 |       -0.4 |     14 | _2120_/D
+       80 |       0 |      63 |       17 |      1 |     9 |   -0.248 |       -0.2 |     14 | _2120_/D
+       90 |       0 |      70 |       19 |      1 |    11 |   -0.243 |       -0.2 |     14 | _2120_/D
+      100 |       0 |      74 |       21 |      1 |    16 |   -0.317 |       -0.4 |     14 | _2120_/D
+      110 |       0 |      79 |       23 |      2 |    19 |   -0.344 |       -0.5 |     14 | _2120_/D
+      120 |       0 |      85 |       25 |      2 |    22 |   -0.223 |       -0.2 |     14 | _2120_/D
+      130 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |     14 | _2120_/D
+      130 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |     14 | _2120_/D
+      131 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |     13 | _2120_/D
+      132 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |     12 | _2120_/D
+      133 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |     11 | _2120_/D
+      134 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |     10 | _2120_/D
+      135 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      9 | _2120_/D
+      136 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      8 | _2120_/D
+      137 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      7 | _2120_/D
+      138 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      6 | _2120_/D
+      139 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      5 | _2120_/D
+      140 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      5 | _2120_/D
+      140 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      4 | _2120_/D
+      141 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      3 | _2120_/D
+      142 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      2 | _2120_/D
+      143 |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      1 | _2120_/D
+     144* |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      1 | _2120_/D
+    final |       0 |      91 |       27 |      4 |    23 |   -0.126 |       -0.1 |      1 | _2120_/D
+---------------------------------------------------------------------------------------------------
+[INFO RSZ-0040] Inserted 16 buffers.
+[INFO RSZ-0041] Resized 91 instances.
+[INFO RSZ-0043] Swapped pins on 23 instances.
+[INFO RSZ-0049] Cloned 4 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0046] Found 12 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   WNS   |   TNS   | Endpoint
+---------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |   0.082 |   0.000 | _2090_/D
+    final |       0 |      12 |            0 |   0.103 |   0.000 | _2094_/D
+---------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 12 hold buffers.
+Placement Analysis
+---------------------------------
+total displacement        254.8 u
+average displacement        0.1 u
+max displacement           10.6 u
+original HPWL           24896.2 u
+legalized HPWL          25990.1 u
+delta HPWL                    4 %
+
+[INFO DPL-0020] Mirrored 568 instances
+[INFO DPL-0021] HPWL before           25990.1 u
+[INFO DPL-0022] HPWL after            25067.7 u
+[INFO DPL-0023] HPWL delta               -3.5 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               114     427.91
+  Tap cell                                324     405.39
+  Buffer                                    1       3.75
+  Clock buffer                              5     125.12
+  Timing Repair Buffer                    168    1098.55
+  Inverter                                  9      38.79
+  Clock inverter                            3      28.78
+  Sequential cell                          50    1003.46
+  Multi-Input combinational cell         1027    7533.48
+  Total                                  1701   10665.23
+Writing OpenROAD database to '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/project/m4/synth/runs/RUN_2026-06-05_21-15-13/36-openroad-resizertimingpostcts/top.odb'…
+Writing netlist to '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/project/m4/synth/runs/RUN_2026-06-05_21-15-13/36-openroad-resizertimingpostcts/top.nl.v'…
+Writing powered netlist to '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/project/m4/synth/runs/RUN_2026-06-05_21-15-13/36-openroad-resizertimingpostcts/top.pnl.v'…
+Writing layout to '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/project/m4/synth/runs/RUN_2026-06-05_21-15-13/36-openroad-resizertimingpostcts/top.def'…
+Writing timing constraints to '/mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/project/m4/synth/runs/RUN_2026-06-05_21-15-13/36-openroad-resizertimingpostcts/top.sdc'…

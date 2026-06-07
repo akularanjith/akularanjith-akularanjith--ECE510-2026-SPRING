@@ -1,0 +1,55 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /mnt/c/Users/Default.DESKTOP-A45I1O9/akularanjith-akularanjith--ECE510-2026-SPRING/project/m4/synth/runs/RUN_2026-06-05_21-26-00/tmp/9ec08287b14f4ac5a9635f8516a98806.lib ",
+   "modules": {
+      "\\top": {
+         "num_wires":         1049,
+         "num_wire_bits":     1326,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 71,
+         "num_ports":         8,
+         "num_port_bits":     54,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1113,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 351,
+            "$_AND_": 63,
+            "$_NAND_": 46,
+            "$_NOR_": 33,
+            "$_NOT_": 47,
+            "$_ORNOT_": 18,
+            "$_OR_": 135,
+            "$_SDFFE_PN0P_": 50,
+            "$_XNOR_": 97,
+            "$_XOR_": 273
+         }
+      }
+   },
+      "design": {
+         "num_wires":         1049,
+         "num_wire_bits":     1326,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 71,
+         "num_ports":         8,
+         "num_port_bits":     54,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1113,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 351,
+            "$_AND_": 63,
+            "$_NAND_": 46,
+            "$_NOR_": 33,
+            "$_NOT_": 47,
+            "$_ORNOT_": 18,
+            "$_OR_": 135,
+            "$_SDFFE_PN0P_": 50,
+            "$_XNOR_": 97,
+            "$_XOR_": 273
+         }
+      }
+}
+
